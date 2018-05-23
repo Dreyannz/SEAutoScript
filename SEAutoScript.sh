@@ -106,6 +106,21 @@ then
    exit 1
 fi
 
+
+echo -e "                                                        "
+echo -e "\e[94m    :::::::::  :::::::::   ::::::::  :::   :::    "
+echo -e "\e[94m    :+:    :+: :+:    :+: :+:    :+: :+:   :+:    "
+echo -e "\e[94m    +:+    +:+ +:+    +:+        +:+  +:+ +:+     "
+echo -e "\e[94m    +#+    +:+ +#++:++#:      +#++:    +#++:      "
+echo -e "\e[94m    +#+    +#+ +#+    +#+        +#+    +#+       "
+echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
+echo -e "\e[94m    #########  ###    ###  ########     ###       "
+echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
+echo -e "\e[94m            Original Script by usneks             "
+echo -e "\e[0m                                                   "
+echo -e "\e[94m          Installation Password Accepted          "
+echo -e "\e[0m                                                   "
+
 HOST=""
 SERVER_PASSWORD=""
 USER=""
