@@ -13,7 +13,7 @@
 				echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
 				echo -e "\e[94m    #########  ###    ###  ########     ###       "
 				echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
-				echo -e "\e[94m            Original Script by usneks             "
+				echo -e "\e[94m            Original Script by usnekx             "
 				echo -e "\e[0m                                                   "
 				echo -e "\e[94m            Connecting To Database...             "
 				echo -e "\e[0m                                                   "
@@ -28,7 +28,7 @@
 				echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
 				echo -e "\e[94m    #########  ###    ###  ########     ###       "
 				echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
-				echo -e "\e[94m            Original Script by usneks             "
+				echo -e "\e[94m            Original Script by usnekx             "
 				echo -e "\e[0m                                                   "
 				echo -e "\e[94m             Connection Established               "
 				echo -e "\e[0m                                                   "
@@ -43,7 +43,7 @@
 				echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
 				echo -e "\e[94m    #########  ###    ###  ########     ###       "
 				echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
-				echo -e "\e[94m            Original Script by usneks             "
+				echo -e "\e[94m            Original Script by usnekx             "
 				echo -e "\e[0m                                                   "
 				read -p "       Installation Password: " password
 				clear
@@ -84,7 +84,7 @@ then
 				echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
 				echo -e "\e[94m    #########  ###    ###  ########     ###       "
 				echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
-				echo -e "\e[94m            Original Script by usneks             "
+				echo -e "\e[94m            Original Script by usnekx             "
 				echo -e "\e[0m                                                   "
 				echo -e "\e[91m         Incorrect Installation Password          "
 				echo -e "\e[91m       Please Send A Message To _Dreyannz_        "
@@ -116,7 +116,7 @@ echo -e "\e[94m    +#+    +#+ +#+    +#+        +#+    +#+       "
 echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
 echo -e "\e[94m    #########  ###    ###  ########     ###       "
 echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
-echo -e "\e[94m            Original Script by usneks             "
+echo -e "\e[94m            Original Script by usnekx             "
 echo -e "\e[0m                                                   "
 echo -e "\e[94m          Installation Password Accepted          "
 echo -e "\e[0m                                                   "
@@ -138,11 +138,11 @@ echo -n "Enter Server IP:  "
 read HOST
 echo -n "Set Virtual Hub: "
 read HUB
-echo -n "Set ${HUB} hub username: "
+echo -n "Set ${HUB} Hub Username: "
 read USER
-read -s -p "Set ${HUB} hub password: " SERVER_PASSWORD
+read -s -p "Set ${HUB} Hub Password: " SERVER_PASSWORD
 echo ""
-read -s -p "Set SE Server password: " SE_PASSWORD
+read -s -p "Set SE Server Password: " SE_PASSWORD
 echo ""
 echo " "
 echo "Now sit back and wait until the installation finished."
