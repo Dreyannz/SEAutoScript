@@ -1,3 +1,3 @@
 # SoftEtherAutoScript
-Original Script by Usnekx
-Modded by __Dreyannz__
+Original Script by Usnekx<br/>
+Modded by Dreyannz<br />
