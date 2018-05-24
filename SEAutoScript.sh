@@ -13,7 +13,7 @@
 				echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
 				echo -e "\e[94m    #########  ###    ###  ########     ###       "
 				echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
-				echo -e "\e[94m            Original Script by usnekx             "
+				echo -e "\e[94m            Original Script by Usnekx             "
 				echo -e "\e[0m                                                   "
 				echo -e "\e[94m            Connecting To Database...             "
 				echo -e "\e[0m                                                   "
@@ -28,7 +28,7 @@
 				echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
 				echo -e "\e[94m    #########  ###    ###  ########     ###       "
 				echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
-				echo -e "\e[94m            Original Script by usnekx             "
+				echo -e "\e[94m            Original Script by Usnekx             "
 				echo -e "\e[0m                                                   "
 				echo -e "\e[94m             Connection Established               "
 				echo -e "\e[0m                                                   "
@@ -43,7 +43,7 @@
 				echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
 				echo -e "\e[94m    #########  ###    ###  ########     ###       "
 				echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
-				echo -e "\e[94m            Original Script by usnekx             "
+				echo -e "\e[94m            Original Script by Usnekx             "
 				echo -e "\e[0m                                                   "
 				read -p "       Installation Password: " password
 				clear
@@ -84,7 +84,7 @@ then
 				echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
 				echo -e "\e[94m    #########  ###    ###  ########     ###       "
 				echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
-				echo -e "\e[94m            Original Script by usnekx             "
+				echo -e "\e[94m            Original Script by Usnekx             "
 				echo -e "\e[0m                                                   "
 				echo -e "\e[91m         Incorrect Installation Password          "
 				echo -e "\e[91m       Please Send A Message To _Dreyannz_        "
@@ -116,37 +116,50 @@ echo -e "\e[94m    +#+    +#+ +#+    +#+        +#+    +#+       "
 echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
 echo -e "\e[94m    #########  ###    ###  ########     ###       "
 echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
-echo -e "\e[94m            Original Script by usnekx             "
+echo -e "\e[94m            Original Script by Usnekx             "
 echo -e "\e[0m                                                   "
 echo -e "\e[94m          Installation Password Accepted          "
 echo -e "\e[0m                                                   "
+sleep 2
 
+MYIP=$(wget -qO- ipv4.icanhazip.com);
+MYIP2="s/xxxxxxxxx/$MYIP/g";
 HOST=""
 SERVER_PASSWORD=""
 USER=""
 HUB=""
 SE_PASSWORD=""
-
 HOST=${HOST}
 HUB=${HUB}
 USER_PASSWORD=${SERVER_PASSWORD}
 SE_PASSWORD=${SE_PASSWORD}
 
-
+echo -e "                                                        "
+echo -e "\e[94m    :::::::::  :::::::::   ::::::::  :::   :::    "
+echo -e "\e[94m    :+:    :+: :+:    :+: :+:    :+: :+:   :+:    "
+echo -e "\e[94m    +:+    +:+ +:+    +:+        +:+  +:+ +:+     "
+echo -e "\e[94m    +#+    +:+ +#++:++#:      +#++:    +#++:      "
+echo -e "\e[94m    +#+    +#+ +#+    +#+        +#+    +#+       "
+echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
+echo -e "\e[94m    #########  ###    ###  ########     ###       "
+echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
+echo -e "\e[94m            Original Script by Usnekx             "
+echo -e "\e[0m                                                   "
+sleep 2
 clear
-echo -n "Enter Server IP:  "
-read HOST
-echo -n "Set Virtual Hub: "
-read HUB
-echo -n "Set ${HUB} Hub Username: "
-read USER
-read -s -p "Set ${HUB} Hub Password: " SERVER_PASSWORD
-echo ""
-read -s -p "Set SE Server Password: " SE_PASSWORD
-echo ""
-echo " "
-echo "Now sit back and wait until the installation finished."
-echo " "
+echo -e "\e[0m                                                   "
+read -p "\e[94m    Server IP             : " -e -i $MYIP2 HOST
+echo -e "\e[0m                                                   "
+read -p "\e[94m    Virtual Hub Name      : "  HUB
+echo -e "\e[0m                                                   "
+read -p "\e[94m    Virtual Hub UserName  : "  USER
+echo -e "\e[0m                                                   "
+read -p "\e[94m    Virtual Hub Password  : "  SERVER_PASSWORD
+echo -e "\e[0m                                                   "
+read -p "\e[94m    SE Server Password    : "  SE_PASSWORD
+echo -e "\e[0m                                                   "
+
+
 
 sudo apt-get -y update && sudo apt-get -y upgrade && apt-get install expect -y
 sudo apt-get install checkinstall build-essential -y
@@ -228,15 +241,29 @@ ${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /CMD Listen
 ${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /CMD ListenerCreate 4500
 ${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /CMD ListenerCreate 4000
 ${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /CMD ListenerCreate 40000
+
+rm -f /root/pass.txt
+rm -f /root/SEAutoScript.sh
+
 clear
-echo "Softether server configuration has been done!"
-echo " "
-echo "Host: ${HOST}"
-echo "Virtual Hub: ${HUB}"
-echo "Port: 443, 53, 137"
-echo "Username: ${USER}"
-echo "Password: ${SERVER_PASSWORD}"
-echo "Server Password: ${SE_PASSWORD}"
-echo " "
-echo "Join us in TD's Discord Server"
-echo "Invitation link: https://discord.gg/2BCNNYg"
+echo -e "                                                        "
+echo -e "\e[94m    :::::::::  :::::::::   ::::::::  :::   :::    "
+echo -e "\e[94m    :+:    :+: :+:    :+: :+:    :+: :+:   :+:    "
+echo -e "\e[94m    +:+    +:+ +:+    +:+        +:+  +:+ +:+     "
+echo -e "\e[94m    +#+    +:+ +#++:++#:      +#++:    +#++:      "
+echo -e "\e[94m    +#+    +#+ +#+    +#+        +#+    +#+       "
+echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
+echo -e "\e[94m    #########  ###    ###  ########     ###       "
+echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
+echo -e "\e[94m            Original Script by Usnekx             "
+echo -e "\e[0m                                                   "
+echo -e "\e[94m    Server IP             : ${HOST}"
+echo -e "\e[94m    Virtual Hub Name      : ${HUB}"
+echo -e "\e[94m    Port/s                : 443, 53, 137"
+echo -e "\e[94m    Virtual Hub UserName  : ${USER}"
+echo -e "\e[94m    Virtual Hub Password  : ${SERVER_PASSWORD}"
+echo -e "\e[94m    SE Server Password    : ${SE_PASSWORD}"
+echo -e "\e[0m                                                   "
+echo -e "\e[94m          Join Us In TD's Discord Server          "
+echo -e "\e[94m            https://discord.gg/2BCNNYg"           "
+
