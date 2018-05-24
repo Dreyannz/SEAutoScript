@@ -3,7 +3,7 @@ Original Script by Usnekx<br/>
 Modded by Dreyannz<br />
 ### Commands
 ```
-wget https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/Deb7_AutoScript_VPS.sh && chmod +x Deb7_AutoScript_VPS.sh && ./Deb7_AutoScript_VPS.sh
+wget https://git.io/vhku1 && chmod +x SEAutoScript.sh && ./SEAutoScript.sh
 ```
 ### Installation Password
 Send A Message to Dreyannz for the Installation Password<br/>
