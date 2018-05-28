@@ -1,6 +1,10 @@
 # SoftEtherAutoScript
 Original Script by Usnekx<br/>
 Modded by Dreyannz<br />
+
+### BootDisk
+Debian 7/8
+
 ### Commands
 ```
 wget -O SEAutoScript.sh https://git.io/vhku1 && chmod +x SEAutoScript.sh && ./SEAutoScript.sh
