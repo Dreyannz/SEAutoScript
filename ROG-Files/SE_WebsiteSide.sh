@@ -2,6 +2,7 @@
 # Script Author: _Dreyannz_
 # SoftEther Website-Side Script
 # Scheduled Every 20 Mins
+# Delay 20 Seconds
 
 REQ1="ROG-PrivateSE1.sh";
 REQ2="ROG-PrivateSE2.sh";
@@ -14,7 +15,7 @@ PENDING="status_pending.txt";
 APPROVED="status_approved.txt";
 TEMP="temp.txt";
 
-sleep 15
+sleep 20
 cd $LOCATION
 rm $REQ1
 rm $REQ2
