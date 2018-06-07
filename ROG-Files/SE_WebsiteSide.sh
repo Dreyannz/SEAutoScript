@@ -15,7 +15,7 @@ PENDING="status_pending.txt";
 APPROVED="status_approved.txt";
 TEMP="temp.txt";
 
-sleep 20
+sleep 60
 cd $LOCATION
 rm $REQ1
 rm $REQ2
@@ -23,6 +23,10 @@ rm $REQ3
 wget -O $REQ1 "$GITHUB1"
 wget -O $REQ2 "$GITHUB2"
 wget -O $REQ3 "$GITHUB3"
-cat  $PENDING $APPROVED > $TEMP
+chmod 666 $REQ1
+chmod 666 $REQ2
+chmod 666 $REQ2
+cat $APPROVED $PENDING > $TEMP
 mv $TEMP $APPROVED
+rm $PENDING
 clear
