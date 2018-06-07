@@ -4,7 +4,7 @@
 # Scheduled Every 20 Mins
 
 IP="104.131.48.226";
-REQ="ROG-PrivateSE2.sh";
+REQ="ROG-PrivateSE3.sh";
 
 wget $IP/softether/ROG/$REQ
 chmod +x $REQ
