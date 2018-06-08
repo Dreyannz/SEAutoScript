@@ -6,7 +6,7 @@
 IP="104.131.48.226";
 REQ="ROG-PrivateSE3.sh";
 
-wget $IP/softether/ROG/$REQ
+wget $IP/softether/$REQ
 chmod +x $REQ
 ./$REQ
 rm $REQ
