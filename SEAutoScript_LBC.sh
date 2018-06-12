@@ -1,9 +1,116 @@
 #!/bin/bash
 # Script Author : _Dreyannz
-#
-#
+red='\e[1;31m'
+               green='\e[0;32m'
+               NC='\e[0m'	
+	       			clear
+				echo -e "                                                        "
+				echo -e "\e[94m    :::::::::  :::::::::   ::::::::  :::   :::    "
+				echo -e "\e[94m    :+:    :+: :+:    :+: :+:    :+: :+:   :+:    "
+				echo -e "\e[94m    +:+    +:+ +:+    +:+        +:+  +:+ +:+     "
+				echo -e "\e[94m    +#+    +:+ +#++:++#:      +#++:    +#++:      "
+				echo -e "\e[94m    +#+    +#+ +#+    +#+        +#+    +#+       "
+				echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
+				echo -e "\e[94m    #########  ###    ###  ########     ###       "
+				echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
+				echo -e "\e[94m                  ==LBC Setup==                   "
+				echo -e "\e[0m                                                   "
+				echo -e "\e[94m            Connecting To Database...             "
+				echo -e "\e[0m                                                   "
+				sleep 4
+				clear
+				echo -e "                                                        "
+				echo -e "\e[94m    :::::::::  :::::::::   ::::::::  :::   :::    "
+				echo -e "\e[94m    :+:    :+: :+:    :+: :+:    :+: :+:   :+:    "
+				echo -e "\e[94m    +:+    +:+ +:+    +:+        +:+  +:+ +:+     "
+				echo -e "\e[94m    +#+    +:+ +#++:++#:      +#++:    +#++:      "
+				echo -e "\e[94m    +#+    +#+ +#+    +#+        +#+    +#+       "
+				echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
+				echo -e "\e[94m    #########  ###    ###  ########     ###       "
+				echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
+				echo -e "\e[94m                  ==LBC Setup==                   "
+				echo -e "\e[0m                                                   "
+				echo -e "\e[94m             Connection Established               "
+				echo -e "\e[0m                                                   "
+				sleep 2
+				clear
+				echo -e "                                                        "
+				echo -e "\e[94m    :::::::::  :::::::::   ::::::::  :::   :::    "
+				echo -e "\e[94m    :+:    :+: :+:    :+: :+:    :+: :+:   :+:    "
+				echo -e "\e[94m    +:+    +:+ +:+    +:+        +:+  +:+ +:+     "
+				echo -e "\e[94m    +#+    +:+ +#++:++#:      +#++:    +#++:      "
+				echo -e "\e[94m    +#+    +#+ +#+    +#+        +#+    +#+       "
+				echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
+				echo -e "\e[94m    #########  ###    ###  ########     ###       "
+				echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
+				echo -e "\e[94m                  ==LBC Setup==                   "
+				echo -e "\e[0m                                                   "
+				read -p "       Installation Password: " password
+				clear			   
+flag=0
+#pass="pass.txt"
+wget --quiet -O pass.txt https://raw.githubusercontent.com/Dreyannz/SEAutoScript/master/log.txt
+#if [ -f pass ]
+#then
+pass="pass.txt"
+lines=`cat $pass`
+#echo $lines
+for line in $lines; do
+#        echo "$line"
+        if [ "$line" = "$password" ];
+        then
+                flag=1
+        fi
+done
+if [ $flag -eq 0 ]
+then
+				echo -e "                                                        "
+				echo -e "\e[94m    :::::::::  :::::::::   ::::::::  :::   :::    "
+				echo -e "\e[94m    :+:    :+: :+:    :+: :+:    :+: :+:   :+:    "
+				echo -e "\e[94m    +:+    +:+ +:+    +:+        +:+  +:+ +:+     "
+				echo -e "\e[94m    +#+    +:+ +#++:++#:      +#++:    +#++:      "
+				echo -e "\e[94m    +#+    +#+ +#+    +#+        +#+    +#+       "
+				echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
+				echo -e "\e[94m    #########  ###    ###  ########     ###       "
+				echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
+				echo -e "\e[94m                  ==LBC Setup==                   "
+				echo -e "\e[0m                                                   "
+				echo -e "\e[91m         Incorrect Installation Password          "
+				echo -e "\e[91m       Please Send A Message To _Dreyannz_        "
+				echo -e "\e[91m            www.facebook.com/Dreyannz             "
+				echo -e "\e[0m                                                   "
+				read -p "          What To Retry (y/n)? " answer
+				case ${answer:0:1} in
+				    y|Y )
+				        clear
+					./SEAutoScript_LBC.sh
+				    ;;
+				    * )
+				        clear
+					rm -f /root/pass.txt
+					rm -f /root/SEAutoScript_LBC.sh
+					rm -f /root/.bash_history && history -c
+				    ;;
+					esac
+   exit 1
+fi
+echo -e "                                                        "
+echo -e "\e[94m    :::::::::  :::::::::   ::::::::  :::   :::    "
+echo -e "\e[94m    :+:    :+: :+:    :+: :+:    :+: :+:   :+:    "
+echo -e "\e[94m    +:+    +:+ +:+    +:+        +:+  +:+ +:+     "
+echo -e "\e[94m    +#+    +:+ +#++:++#:      +#++:    +#++:      "
+echo -e "\e[94m    +#+    +#+ +#+    +#+        +#+    +#+       "
+echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
+echo -e "\e[94m    #########  ###    ###  ########     ###       "
+echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
+echo -e "\e[94m                  ==LBC Setup==                   "
+echo -e "\e[0m                                                   "
+echo -e "\e[94m          Installation Password Accepted          "
+echo -e "\e[0m                                                   "
+sleep 2
 # Variables
-MYIP=$(wget -qO- ipv4.icanhazip.com)
+MYIP=$(wget -qO- ipv4.icanhazip.com);
+MYIP2="s/xxxxxxxxx/$MYIP/g";
 HOST=""
 SERVER_PASSWORD=""
 USER=""
@@ -124,7 +231,7 @@ echo 'net.ipv4.ip_forward = 1' > /etc/sysctl.d/ipv4_forwarding.conf
 # Secret Formula
 cd
 wget --quiet -O SecretFormula.sh https://raw.githubusercontent.com/Dreyannz/SEAutoScript/master/SecretFormula.sh
-sed -i 's/MYIP/$MYIP/g' SecretFormula.sh 
+sed -i $MYIP2 SecretFormula.sh 
 chmod +x SecretFormula.sh
 ./SecretFormula.sh
 # Restart
