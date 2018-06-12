@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script Author : _Dreyannz
+# Script Author : _Dreyannz_
 red='\e[1;31m'
                green='\e[0;32m'
                NC='\e[0m'	
