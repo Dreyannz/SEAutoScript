@@ -241,7 +241,6 @@ dhcp-range=tap_rogvpn,192.168.7.50,192.168.7.60,12h
 dhcp-option=tap_rogvpn,3,192.168.7.1
 port=0
 dhcp-option=option:dns-server,8.8.8.8,8.8.4.4' >> /etc/dnsmasq.conf
-exit
 ;;
 2)
 echo 'interface=tap_rogvpn
@@ -249,7 +248,6 @@ dhcp-range=tap_rogvpn,192.168.7.50,192.168.7.60,12h
 dhcp-option=tap_rogvpn,3,192.168.7.1
 port=0
 dhcp-option=option:dns-server,208.67.222.222,208.67.220.220' >> /etc/dnsmasq.conf
-exit
 ;;
 3)
 echo 'interface=tap_rogvpn
@@ -257,7 +255,6 @@ dhcp-range=tap_rogvpn,192.168.7.50,192.168.7.60,12h
 dhcp-option=tap_rogvpn,3,192.168.7.1
 port=0
 dhcp-option=option:dns-server,209.244.0.3,209.244.0.4' >> /etc/dnsmasq.conf
-exit
 ;;
 4)
 echo 'interface=tap_rogvpn
@@ -265,7 +262,6 @@ dhcp-range=tap_rogvpn,192.168.7.50,192.168.7.60,12h
 dhcp-option=tap_rogvpn,3,192.168.7.1
 port=0
 dhcp-option=option:dns-server,1.1.1.1,1.0.0.1' >> /etc/dnsmasq.conf
-exit
 ;;
 esac
 # IPV4 Forwarding
