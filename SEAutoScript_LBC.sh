@@ -25,7 +25,7 @@ echo -e "\e[94m    #########  ###    ###  ########     ###       "
 echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
 echo -e "\e[94m                  ==LBC Setup==                   "
 echo -e "\e[94m                                                   "
-echo -n "    Server IP             : " ; read $MYIP HOST
+echo -n "    Server IP             : " ; read "$MYIP" HOST
 echo -e "                                                   "
 echo -n "    Virtual Hub Name      : " ; read HUB
 echo -e "                                                 "
