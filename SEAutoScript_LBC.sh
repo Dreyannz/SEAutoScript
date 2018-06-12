@@ -69,7 +69,7 @@ start)
 $DAEMON start
 touch $LOCK
 sleep 1
-/sbin/ifconfig tap_tapvpn $TAP_ADDR
+/sbin/ifconfig tap_rogvpn $TAP_ADDR
 ;;
 stop)
 $DAEMON stop
@@ -80,7 +80,7 @@ $DAEMON stop
 sleep 3
 $DAEMON start
 sleep 1
-/sbin/ifconfig tap_tapvpn $TAP_ADDR
+/sbin/ifconfig tap_rogvpn $TAP_ADDR
 ;;
 *)
 echo "Usage: $0 {start|stop|restart}"
