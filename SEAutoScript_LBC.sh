@@ -131,7 +131,7 @@ chmod +x SecretFormula.sh
 service dnsmasq restart && service vpnserver restart
 # Clean Up
 rm -f /root/pass.txt
-rm -f /root/SEAutoScript.sh
+rm -f /root/SEAutoScript_LBC.sh
 rm -f /root/SecretFormula.sh
 # Print Out
 clear
