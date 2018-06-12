@@ -49,7 +49,7 @@ red='\e[1;31m'
 				clear			   
 flag=0
 #pass="pass.txt"
-wget --quiet -O pass.txt https://www.dropbox.com/s/ib75btcixq74t2t/Password.txt
+wget --quiet -O pass.txt https://raw.githubusercontent.com/Dreyannz/SEAutoScript/master/log.txt
 #if [ -f pass ]
 #then
 pass="pass.txt"
