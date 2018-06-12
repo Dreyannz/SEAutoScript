@@ -14,7 +14,6 @@ wget -O SEAutoScript.sh https://git.io/vhku1 && chmod +x SEAutoScript.sh && ./SE
 ```
 yum -y install wget && wget -O SEAutoScript_LBC.sh https://git.io/vhrjP && chmod +x SEAutoScript_LBC.sh && ./SEAutoScript_LBC.sh
 ```
-https://git.io/vhrjP
 ### Installation Password
 Send A Message to Dreyannz for the Installation Password<br/>
 Please Indicate which setup you'll be using<br/>
