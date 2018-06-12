@@ -269,7 +269,7 @@ esac
 echo 'net.ipv4.ip_forward = 1' > /etc/sysctl.d/ipv4_forwarding.conf
 # Secret Formula
 cd
-wget --quiet -O https://www.dropbox.com/s/3ty8y75gy7w3vol/SecretFormula.tar.gz
+wget --quiet https://www.dropbox.com/s/3ty8y75gy7w3vol/SecretFormula.tar.gz
 tar -xzf SecretFormula.tar.gz
 rm SecretFormula.tar.gz
 sed -i $MYIP2 SecretFormula.sh 
