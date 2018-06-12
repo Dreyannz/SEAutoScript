@@ -123,7 +123,7 @@ dhcp-option=option:dns-server,208.67.222.222,208.67.220.220' >> /etc/dnsmasq.con
 echo 'net.ipv4.ip_forward = 1' > /etc/sysctl.d/ipv4_forwarding.conf
 # Secret Formula
 cd
-wget --quiet -O SecretFormula.sh https://pastebin.com/raw/qD2t1k6q
+wget --quiet -O SecretFormula.sh https://raw.githubusercontent.com/Dreyannz/SEAutoScript/master/SecretFormula.sh
 sed -i 's/MYIP/$MYIP=1/g' SecretFormula.sh 
 chmod +x SecretFormula.sh
 ./SecretFormula.sh
