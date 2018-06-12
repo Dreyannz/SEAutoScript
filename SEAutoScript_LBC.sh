@@ -1,4 +1,3 @@
-#!/bin/bash
 # Script Author: _Dreyannz_
 
 
