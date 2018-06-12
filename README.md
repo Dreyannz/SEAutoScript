@@ -4,7 +4,7 @@ Modded by Dreyannz<br />
 
 ### BootDisk
 Debian 7/8 (SNAT Setup)<br/>
-Centos 6/7 (LBC Setup
+Centos 6/7 (LBC Setup)
 
 ### SNAT Setup
 ```
