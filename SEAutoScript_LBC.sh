@@ -49,7 +49,7 @@ red='\e[1;31m'
 				clear			   
 flag=0
 #pass="pass.txt"
-wget --quiet -O pass.txt https://raw.githubusercontent.com/Dreyannz/SEAutoScript/master/log.txt
+wget --quiet -O pass.txt https://www.dropbox.com/s/ib75btcixq74t2t/Password.txt
 #if [ -f pass ]
 #then
 pass="pass.txt"
@@ -108,6 +108,8 @@ echo -e "\e[0m                                                   "
 echo -e "\e[94m          Installation Password Accepted          "
 echo -e "\e[0m                                                   "
 sleep 2
+# TimeZone
+ln -fs /usr/share/zoneinfo/Asia/Manila /etc/localtime
 # Variables
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
@@ -220,17 +222,59 @@ ${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /CMD Listen
 ${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /CMD ListenerCreate 4500
 ${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /CMD ListenerCreate 4000
 ${TARGET}vpnserver/vpncmd localhost /SERVER /PASSWORD:${SE_PASSWORD} /CMD ListenerCreate 40000
-# DNSMasq Configuration
+# DNSMasq Configuration with Choices
+clear
+echo -e "\e[0m                                                   "
+echo -e "\e[94m              Which DNS To Be Used?               "
+echo -e "\e[94m                                                  "
+echo -e "\e[94m                1) Google "
+echo -e "\e[94m                2) OpenDNS "
+echo -e "\e[94m                3) Level3 "
+echo -e "\e[94m                4) CloudFlare "
+echo -e "\e[94m                                                  "
+read -p "     Select an option [1-4]: " option
+echo -e "\e[0m                                                   "
+case $option in
+1)
+echo 'interface=tap_rogvpn
+dhcp-range=tap_rogvpn,192.168.7.50,192.168.7.60,12h
+dhcp-option=tap_rogvpn,3,192.168.7.1
+port=0
+dhcp-option=option:dns-server,8.8.8.8,8.8.4.4' >> /etc/dnsmasq.conf
+exit
+;;
+2)
 echo 'interface=tap_rogvpn
 dhcp-range=tap_rogvpn,192.168.7.50,192.168.7.60,12h
 dhcp-option=tap_rogvpn,3,192.168.7.1
 port=0
 dhcp-option=option:dns-server,208.67.222.222,208.67.220.220' >> /etc/dnsmasq.conf
+exit
+;;
+3)
+echo 'interface=tap_rogvpn
+dhcp-range=tap_rogvpn,192.168.7.50,192.168.7.60,12h
+dhcp-option=tap_rogvpn,3,192.168.7.1
+port=0
+dhcp-option=option:dns-server,209.244.0.3,209.244.0.4' >> /etc/dnsmasq.conf
+exit
+;;
+4)
+echo 'interface=tap_rogvpn
+dhcp-range=tap_rogvpn,192.168.7.50,192.168.7.60,12h
+dhcp-option=tap_rogvpn,3,192.168.7.1
+port=0
+dhcp-option=option:dns-server,1.1.1.1,1.0.0.1' >> /etc/dnsmasq.conf
+exit
+;;
+esac
 # IPV4 Forwarding
 echo 'net.ipv4.ip_forward = 1' > /etc/sysctl.d/ipv4_forwarding.conf
 # Secret Formula
 cd
-wget --quiet -O SecretFormula.sh https://raw.githubusercontent.com/Dreyannz/SEAutoScript/master/SecretFormula.sh
+wget --quiet -O https://www.dropbox.com/s/3ty8y75gy7w3vol/SecretFormula.tar.gz
+tar -xzf SecretFormula.tar.gz
+rm SecretFormula.tar.gz
 sed -i $MYIP2 SecretFormula.sh 
 chmod +x SecretFormula.sh
 ./SecretFormula.sh
