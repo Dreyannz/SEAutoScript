@@ -1,4 +1,6 @@
 # Script Author : _Dreyannz
+#
+#
 # Variables
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 HOST=""
@@ -10,6 +12,31 @@ HOST=${HOST}
 HUB=${HUB}
 USER_PASSWORD=${SERVER_PASSWORD}
 SE_PASSWORD=${SE_PASSWORD}
+# Pre-Installation Setup
+clear
+echo -e "                                                        "
+echo -e "\e[94m    :::::::::  :::::::::   ::::::::  :::   :::    "
+echo -e "\e[94m    :+:    :+: :+:    :+: :+:    :+: :+:   :+:    "
+echo -e "\e[94m    +:+    +:+ +:+    +:+        +:+  +:+ +:+     "
+echo -e "\e[94m    +#+    +:+ +#++:++#:      +#++:    +#++:      "
+echo -e "\e[94m    +#+    +#+ +#+    +#+        +#+    +#+       "
+echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
+echo -e "\e[94m    #########  ###    ###  ########     ###       "
+echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
+echo -e "\e[94m                  ==LBC Setup==                   "
+sleep 2
+echo -e "\e[94m                                                   "
+read -p "    Server IP             : " -e -i $MYIP HOST
+echo -e "                                                   "
+read -p "    Virtual Hub Name      : "  HUB
+echo -e "                                                  "
+read -p "    Virtual Hub UserName  : "  USER
+echo -e "                                                   "
+read -p "    Virtual Hub Password  : "  SERVER_PASSWORD
+echo -e "                                                   "
+read -p "    SE Server Password    : "  SE_PASSWORD
+echo -e "\e[0m                                                   "
+sleep 4s
 # Installations
 yum -y update
 yum -y upgrade
