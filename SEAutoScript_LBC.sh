@@ -20,7 +20,7 @@ red='\e[1;31m'
 				echo -e "\e[0m                                                   "
 				echo -e "\e[94m            Connecting To Database...             "
 				echo -e "\e[0m                                                   "
-				sleep 4
+				sleep 4s
 				clear
 				echo -e "                                                        "
 				echo -e "\e[94m    :::::::::  :::::::::   ::::::::  :::   :::    "
@@ -35,7 +35,7 @@ red='\e[1;31m'
 				echo -e "\e[0m                                                   "
 				echo -e "\e[94m             Connection Established               "
 				echo -e "\e[0m                                                   "
-				sleep 2
+				sleep 2s
 				clear
 				echo -e "                                                        "
 				echo -e "\e[94m    :::::::::  :::::::::   ::::::::  :::   :::    "
@@ -123,7 +123,7 @@ echo -e "\e[94m                  ==LBC Setup==                   "
 echo -e "\e[0m                                                   "
 echo -e "\e[94m          Installation Password Accepted          "
 echo -e "\e[0m                                                   "
-sleep 2
+sleep 2s
 
 # Variables
 MYIP=$(wget -qO- ipv4.icanhazip.com);
