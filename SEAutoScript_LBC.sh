@@ -24,23 +24,17 @@ echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
 echo -e "\e[94m    #########  ###    ###  ########     ###       "
 echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
 echo -e "\e[94m                  ==LBC Setup==                   "
-echo -e "\e[94m                                                  "
-#
-sleep 4s
-echo -e "\e[94m                                                  "
-echo -p "    Server IP             : " 
-read HOST
+echo -e "\e[94m                                                   "
+echo -n "    Server IP             : " ; read $MYIP HOST
 echo -e "                                                   "
-echo -p "    Virtual Hub Name      : "
-read HUB
+echo -n "    Virtual Hub Name      : " ; read HUB
+echo -e "                                                 "
+read -p "    Virtual Hub UserName  : " USER
 echo -e "                                                  "
-read -p "    Virtual Hub UserName  : "  USER
-echo -e "                                                   "
-read -p "    Virtual Hub Password  : "  SERVER_PASSWORD
-echo -e "                                                   "
-read -p "    SE Server Password    : "  SE_PASSWORD
+read -p "    Virtual Hub Password  : " SERVER_PASSWORD
+echo -e "                                                  "
+read -p "    SE Server Password    : " SE_PASSWORD
 echo -e "\e[0m                                                   "
-sleep 4s
 # Installations
 yum -y update
 yum -y upgrade
