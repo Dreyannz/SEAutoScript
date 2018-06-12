@@ -2,7 +2,7 @@
 #
 #
 # Variables
-MYIP=$(wget -qO- ipv4.icanhazip.com);
+MYIP=$(wget -qO- ipv4.icanhazip.com)
 HOST=""
 SERVER_PASSWORD=""
 USER=""
@@ -24,11 +24,15 @@ echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "
 echo -e "\e[94m    #########  ###    ###  ########     ###       "
 echo -e "\e[94m          SEAutoScript_Mod by _Dreyannz_          "
 echo -e "\e[94m                  ==LBC Setup==                   "
-sleep 2
-echo -e "\e[94m                                                   "
-read -p "    Server IP             : " -e -i $MYIP HOST
+echo -e "\e[94m                                                  "
+#
+sleep 4s
+echo -e "\e[94m                                                  "
+echo -p "    Server IP             : " 
+read HOST
 echo -e "                                                   "
-read -p "    Virtual Hub Name      : "  HUB
+echo -p "    Virtual Hub Name      : "
+read HUB
 echo -e "                                                  "
 read -p "    Virtual Hub UserName  : "  USER
 echo -e "                                                   "
