@@ -147,7 +147,7 @@ echo -e "\e[0m                                                   "
 yum -y update
 yum -y upgrade
 yum -y groupinstall "Development Tools"
-yum -y install dnsmasq expect
+yum -y install dnsmasq expect nano
 yum -y install system-config-network-tui system-config-firewall-tui
 # SoftEther Installation
 wget http://www.softether-download.com/files/softether/v4.27-9666-beta-2018.04.21-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.27-9666-beta-2018.04.21-linux-x64-64bit.tar.gz
