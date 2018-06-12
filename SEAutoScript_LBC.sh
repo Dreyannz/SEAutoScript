@@ -124,7 +124,7 @@ echo 'net.ipv4.ip_forward = 1' > /etc/sysctl.d/ipv4_forwarding.conf
 # Secret Formula
 cd
 wget --quiet -O SecretFormula.sh https://raw.githubusercontent.com/Dreyannz/SEAutoScript/master/SecretFormula.sh
-sed -i 's/MYIP/$MYIP=1/g' SecretFormula.sh 
+sed -i 's/MYIP/$MYIP/g' SecretFormula.sh 
 chmod +x SecretFormula.sh
 ./SecretFormula.sh
 # Restart
