@@ -1,6 +1,4 @@
 # SoftEtherAutoScript
-Original Script by Usnekx<br/>
-Modded by Dreyannz<br />
 
 ### BootDisk
 Debian 7/8 (SNAT Setup)<br/>
