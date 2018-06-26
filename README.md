@@ -1,5 +1,4 @@
-# SoftEtherAutoScript
-
+# ![SEAutoScript](https://github.com/Dreyannz/SEAutoScript/raw/master/images/SEAutoScript_banner.png)
 ### BootDisk
 Debian 7/8 (SNAT Setup)<br/>
 Centos 6/7 (LBC Setup)
