@@ -1,15 +1,11 @@
 # ![SEAutoScript](https://github.com/Dreyannz/SEAutoScript/raw/master/images/SEAutoScript_banner.png)
 ### ![Supported BootDisk](https://github.com/Dreyannz/SEAutoScript/raw/master/images/SEAutoScript_bootdisksupport.png)
-
-### SNAT Setup
+### ![Supported BootDisk](https://github.com/Dreyannz/SEAutoScript/raw/master/images/SEAutoScript_commands_main.png)
+![Supported BootDisk](https://github.com/Dreyannz/SEAutoScript/raw/master/images/SEAutoScript_commands_debian.png)
 ```
-wget -O SEAutoScript.sh https://git.io/vhku1 && chmod +x SEAutoScript.sh && ./SEAutoScript.sh
+wget -O SEAutoScript_SNAT.sh https://git.io/f4Qqm && chmod +x SEAutoScript_SNAT.sh && ./SEAutoScript_SNAT.sh
 ```
-### LBC Setup
+![Supported BootDisk](https://github.com/Dreyannz/SEAutoScript/raw/master/images/SEAutoScript_commands_centos.png)
 ```
-yum -y install wget && wget -O SEAutoScript_LBC.sh https://git.io/vhrjP && chmod +x SEAutoScript_LBC.sh && ./SEAutoScript_LBC.sh
+yum -y install wget && wget -O SEAutoScript_SNAT.sh && chmod +x SEAutoScript_SNAT.sh && ./SEAutoScript_SNAT.sh
 ```
-### Installation Password
-Send A Message to Dreyannz for the Installation Password<br/>
-Please Indicate which setup you'll be using<br/>
-<a href="https://m.me/Dreyannz">Facebook Messenger</a>
