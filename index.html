@@ -83,7 +83,7 @@
 </div>
   
 <button class="btn btn-danger" onclick="Debian()" onmouseout="outFunc()">
-  <span class="tooltiptext" id="DebianTip">Copy</span>
+  <span class="tooltiptext" id="DebianTip"></span>
   Copy text
   </button>
 </div>
@@ -110,7 +110,7 @@ function Debian() {
 
 function outFunc() {
   var tooltip = document.getElementById("DebianTip");
-  tooltip.innerHTML = "Copy To Clipboard";
+  tooltip.innerHTML = "";
 }
 </script>
 
